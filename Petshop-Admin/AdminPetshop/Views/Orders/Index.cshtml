@@ -1,0 +1,35 @@
+﻿@model OrdersViewModel
+@{
+    ViewData["Title"] = "Orders Management";
+    Layout = "_SidebarLayout";
+}
+<p><strong>Total Amount for Shipped Orders:</strong> @Model.TotalShipped.ToString("C")</p>
+<p><strong>Total Amount for Delivered Orders:</strong> @Model.TotalDelivered.ToString("C")</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>User ID</th>
+            <th>User Name</th>
+            <th>Order Date</th>
+            <th>Status</th>
+            <th>Total Amount</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Orders)
+        {
+            <tr>
+                <td>@item.User.UserId</td>
+                <td>@item.User.Username</td> <!-- Assuming User model has a UserName property -->
+                <td>@item.OrderDate?.ToShortDateString()</td>
+                <td>@item.Status</td>
+                <td>@item.TotalAmount.ToString("C")</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.OrderId">Edit</a> |
+                    <a asp-controller="OrderDetails" asp-action="Index">Details</a>                    
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

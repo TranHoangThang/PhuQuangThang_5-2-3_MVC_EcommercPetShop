@@ -1,0 +1,269 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DE44AE08-A084-416D-84A5-3A1FE088EC6B}|AdminPetshop.csproj|d:\\api-final\\cuoiiiiiiiiiiiiiiiii\\petshop-admin\\adminpetshop\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DE44AE08-A084-416D-84A5-3A1FE088EC6B}|AdminPetshop.csproj|solutionrelative:views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE44AE08-A084-416D-84A5-3A1FE088EC6B}|AdminPetshop.csproj|D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE44AE08-A084-416D-84A5-3A1FE088EC6B}|AdminPetshop.csproj|solutionrelative:controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE44AE08-A084-416D-84A5-3A1FE088EC6B}|AdminPetshop.csproj|D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\views\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DE44AE08-A084-416D-84A5-3A1FE088EC6B}|AdminPetshop.csproj|solutionrelative:views\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE44AE08-A084-416D-84A5-3A1FE088EC6B}|AdminPetshop.csproj|D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\views\\products\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DE44AE08-A084-416D-84A5-3A1FE088EC6B}|AdminPetshop.csproj|solutionrelative:views\\products\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE44AE08-A084-416D-84A5-3A1FE088EC6B}|AdminPetshop.csproj|D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\views\\shared\\_sidebarlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DE44AE08-A084-416D-84A5-3A1FE088EC6B}|AdminPetshop.csproj|solutionrelative:views\\shared\\_sidebarlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE44AE08-A084-416D-84A5-3A1FE088EC6B}|AdminPetshop.csproj|D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DE44AE08-A084-416D-84A5-3A1FE088EC6B}|AdminPetshop.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE44AE08-A084-416D-84A5-3A1FE088EC6B}|AdminPetshop.csproj|D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\views\\products\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DE44AE08-A084-416D-84A5-3A1FE088EC6B}|AdminPetshop.csproj|solutionrelative:views\\products\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE44AE08-A084-416D-84A5-3A1FE088EC6B}|AdminPetshop.csproj|D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\views\\orderdetails\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DE44AE08-A084-416D-84A5-3A1FE088EC6B}|AdminPetshop.csproj|solutionrelative:views\\orderdetails\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE44AE08-A084-416D-84A5-3A1FE088EC6B}|AdminPetshop.csproj|D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\controllers\\orderdetailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE44AE08-A084-416D-84A5-3A1FE088EC6B}|AdminPetshop.csproj|solutionrelative:controllers\\orderdetailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE44AE08-A084-416D-84A5-3A1FE088EC6B}|AdminPetshop.csproj|D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DE44AE08-A084-416D-84A5-3A1FE088EC6B}|AdminPetshop.csproj|solutionrelative:views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE44AE08-A084-416D-84A5-3A1FE088EC6B}|AdminPetshop.csproj|D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\data\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE44AE08-A084-416D-84A5-3A1FE088EC6B}|AdminPetshop.csproj|solutionrelative:data\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE44AE08-A084-416D-84A5-3A1FE088EC6B}|AdminPetshop.csproj|D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\data\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE44AE08-A084-416D-84A5-3A1FE088EC6B}|AdminPetshop.csproj|solutionrelative:data\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE44AE08-A084-416D-84A5-3A1FE088EC6B}|AdminPetshop.csproj|D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DE44AE08-A084-416D-84A5-3A1FE088EC6B}|AdminPetshop.csproj|solutionrelative:views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE44AE08-A084-416D-84A5-3A1FE088EC6B}|AdminPetshop.csproj|D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DE44AE08-A084-416D-84A5-3A1FE088EC6B}|AdminPetshop.csproj|solutionrelative:views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE44AE08-A084-416D-84A5-3A1FE088EC6B}|AdminPetshop.csproj|D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DE44AE08-A084-416D-84A5-3A1FE088EC6B}|AdminPetshop.csproj|solutionrelative:views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAHgAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-29T09:05:15.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\Views\\Products\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Products\\Edit.cshtml",
+              "ToolTip": "D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\Views\\Products\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Products\\Edit.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACkAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-29T11:02:43.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductsController.cs",
+              "ToolTip": "D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Controllers\\ProductsController.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAiwG8AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T09:12:27.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\Views\\Products\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Products\\Create.cshtml",
+              "ToolTip": "D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\Views\\Products\\Create.cshtml",
+              "RelativeToolTip": "Views\\Products\\Create.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACMAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-29T11:52:19.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_SidebarLayout.cshtml",
+              "DocumentMoniker": "D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\Views\\Shared\\_SidebarLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_SidebarLayout.cshtml",
+              "ToolTip": "D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\Views\\Shared\\_SidebarLayout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_SidebarLayout.cshtml",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAADUAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-29T09:07:22.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-29T11:36:33.604Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\Views\\Products\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Products\\Delete.cshtml",
+              "ToolTip": "D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\Views\\Products\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Products\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-29T11:52:18.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\Data\\Product.cs",
+              "RelativeDocumentMoniker": "Data\\Product.cs",
+              "ToolTip": "D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\Data\\Product.cs",
+              "RelativeToolTip": "Data\\Product.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAA5wBgAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T14:03:07.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\Views\\Orders\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Orders\\Index.cshtml",
+              "ToolTip": "D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\Views\\Orders\\Index.cshtml",
+              "RelativeToolTip": "Views\\Orders\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-29T14:48:19.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\Views\\OrderDetails\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\OrderDetails\\Index.cshtml",
+              "ToolTip": "D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\Views\\OrderDetails\\Index.cshtml",
+              "RelativeToolTip": "Views\\OrderDetails\\Index.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACAAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-29T14:50:21.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrderDetailsController.cs",
+              "DocumentMoniker": "D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\Controllers\\OrderDetailsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrderDetailsController.cs",
+              "ToolTip": "D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\Controllers\\OrderDetailsController.cs",
+              "RelativeToolTip": "Controllers\\OrderDetailsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T14:49:15.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OrderDetail.cs",
+              "DocumentMoniker": "D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\Data\\OrderDetail.cs",
+              "RelativeDocumentMoniker": "Data\\OrderDetail.cs",
+              "ToolTip": "D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\Data\\OrderDetail.cs",
+              "RelativeToolTip": "Data\\OrderDetail.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAUwBAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T12:55:20.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\Views\\Categories\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Categories\\Index.cshtml",
+              "ToolTip": "D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\Views\\Categories\\Index.cshtml",
+              "RelativeToolTip": "Views\\Categories\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-29T09:07:51.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\Views\\Products\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Products\\Details.cshtml",
+              "ToolTip": "D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\Views\\Products\\Details.cshtml",
+              "RelativeToolTip": "Views\\Products\\Details.cshtml",
+              "ViewState": "AQIAABwAAAAAAAAAAAAYwDoAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-29T11:32:21.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Dashboard.cshtml",
+              "ToolTip": "D:\\API-Final\\Cuoiiiiiiiiiiiiiiiii\\Petshop-Admin\\AdminPetshop\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Dashboard.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-29T08:50:23.752Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
