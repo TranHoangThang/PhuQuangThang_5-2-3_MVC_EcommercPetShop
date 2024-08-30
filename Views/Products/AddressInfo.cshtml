@@ -1,0 +1,271 @@
+﻿@{
+    ViewData["Title"] = "Address";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Address - PetShop</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: 'Rubik';
+        }
+
+        .container h1 {
+            color: #0a2351;
+            font-size: 1.75em;
+            font-weight: bold;
+        }
+
+        .breadcrumb-item a {
+            font-weight: bold;
+            text-decoration: none;
+            color: #0a2351;
+        }
+
+        .breadcrumb-item.active {
+            color: slategray;
+            font-weight: bold;
+        }
+
+        .form-container {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+
+        .address-form {
+            background-color: #ffffff;
+            border-radius: 24px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            margin: 15px 0;
+        }
+
+        .address-form h1 {
+            font-size: 1.75em;
+            text-align: center;
+            color: #0a2351;
+            margin: 20px 0;
+        }
+
+        .address-form p {
+            font-size: 1em;
+            text-align: center;
+            color: #0a2351;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+            padding: 10px 20px;
+            position: relative;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            align-items: center;
+            font-size: 1em;
+            color: #0a2351;
+            padding: 10px;
+            width: 100%;
+            border: 1px solid slategray;
+            border-radius: 4px;
+        }
+
+        .form-group .error-message {
+            color: red;
+            font-size: 0.8em;
+            position: absolute; 
+            top: 90%; 
+            display: none;
+        }
+
+        .payment-methods {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        .payment-methods p {
+            font-size: 0.9em;
+            margin: 0;
+            flex: 1;
+            line-height: 2.75;
+            text-align: left;
+            align-self: center;
+            padding-left: 20px;
+        }
+
+        .payment-methods button {
+            font-size: 1em;
+            padding: 7.5px;
+            border-radius: 16px;
+            background-color: gray;
+            color: white;
+            border: none;
+            margin-right: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+
+        .payment-methods button.active {
+            background-color: #4CAF50;
+        }
+
+        .total-amount {
+            text-align: left;
+            font-size: 1.2em;
+            margin-top: 20px;
+            color: #0a2351;
+            padding-left: 20px;
+        }
+
+        .confirm-button {
+            font-size: 1.5em;
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="@Url.Action("Index", "Home")">Home</a></li>
+                <li class="breadcrumb-item"><a href="@Url.Action("Index", "Products")">Products</a></li>
+                <li class="breadcrumb-item"><a href="@Url.Action("CartView", "Products")">Cart</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Address</li>
+            </ol>
+        </nav>
+        <div class="form-container">
+            <div class="address-form">
+                <h1>Add New Address</h1>
+                <p>To place your order, please provide your address for this delivery</p>
+                <form>
+                    <div class="form-group row">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" id="fullName" placeholder="Full Name">
+                            <div class="error-message">Please enter your full name</div>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" id="phoneNumber" placeholder="Phone Number">
+                            <div class="error-message">Please enter your phone number</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="full-width-input" id="address" placeholder="Province, City, District, Ward/Commune">
+                        <div class="error-message">Please enter your address</div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="full-width-input" id="houseAddress" placeholder="House Address">
+                        <div class="error-message">Please enter your house address</div>
+                    </div>
+                    <div class="payment-methods">
+                        <p>Choose Payment method:</p>
+                        <button type="button">Cash on Delivery</button>
+                        <button type="button">Other Payment</button>
+                    </div>
+                    <div class="total-amount">
+                        Order Total: $@ViewBag.TotalAmount
+                    </div>
+                    <button type="submit" class="confirm-button">Confirm</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const buttons = document.querySelectorAll('.payment-methods button');
+            let selectedButton = null;
+
+            buttons.forEach(button => {
+                button.addEventListener('click', function () {
+                    buttons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    selectedButton = this;
+                });
+            });
+
+            document.querySelector('.address-form').addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                let isValid = true;
+                const fullName = document.getElementById('fullName');
+                const phoneNumber = document.getElementById('phoneNumber');
+                const address = document.getElementById('address');
+                const houseAddress = document.getElementById('houseAddress');
+
+                if (fullName.value.trim() === "") {
+                    showError(fullName, "Please enter your full name");
+                    isValid = false;
+                } else {
+                    hideError(fullName);
+                }
+
+                if (phoneNumber.value.trim() === "") {
+                    showError(phoneNumber, "Please enter your phone number");
+                    isValid = false;
+                } else {
+                    hideError(phoneNumber);
+                }
+
+                if (address.value.trim() === "") {
+                    showError(address, "Please enter your address");
+                    isValid = false;
+                } else {
+                    hideError(address);
+                }
+
+                if (houseAddress.value.trim() === "") {
+                    showError(houseAddress, "Please enter your house address");
+                    isValid = false;
+                } else {
+                    hideError(houseAddress);
+                }
+
+                if (!selectedButton) {
+                    alert('Please choose a payment method');
+                    return;
+                }
+
+                if (isValid) {
+                    if (selectedButton.textContent === 'Cash on Delivery') {
+                        window.location.href = '@Url.Action("Confirmation", "Products")';
+                    } else if (selectedButton.textContent === 'Other Payment') {
+                        window.location.href = '@Url.Action("Checkout", "Products")';
+                    }
+                }
+            });
+
+            function showError(inputElement, message) {
+                const errorDiv = inputElement.nextElementSibling;
+                errorDiv.textContent = message;
+                errorDiv.style.display = "block";
+                inputElement.style.borderColor = "red";
+            }
+
+            function hideError(inputElement) {
+                const errorDiv = inputElement.nextElementSibling;
+                errorDiv.style.display = "none";
+                inputElement.style.borderColor = "slategray";
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Order Confirmation";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Confirmation - PetShop</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: 'Rubik';
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            border-radius: 16px;
+        }
+
+        h1 {
+            color: #0a2351;
+            font-size: 1.75em;
+            font-weight: bold;
+        }
+
+        p {
+            color: #0a2351;
+            font-size: 1.1em;
+        }
+
+        .btn-back {
+            margin-top: 15px;
+            background-color: #0D7C66;
+            color: #D9FFE6;
+            border-radius: 8px;
+            border: none;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .btn-back:hover {
+            color: #0a2351;
+            background-color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="container">
+            <h1>Thank you for your order!</h1>
+            <p>Your order has been placed successfully. We will process it and send you a confirmation email shortly.</p>
+            <a href="@Url.Action("Index", "Products")" class="btn btn-primary btn-back">Back to Products</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,277 @@
+﻿@{
+    ViewData["Title"] = "Wishlist";
+}
+@model List<PetShop.Models.Wishlists>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wishlist - PetShop</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: 'Rubik';
+        }
+
+        .section {
+            font-weight: bold;
+            padding: 0 15px;
+        }
+
+        .main h1 {
+            color: #0a2351;
+            font-size: 1.75em;
+            font-weight: bold;
+        }
+
+        .breadcrumb-item a {
+            text-decoration: none;
+            color: #0a2351;
+        }
+
+        .breadcrumb-item.active {
+            color: slategray;
+        }
+
+        .total {
+            position: relative;
+            top: -5px;
+            margin-top: 25px;
+            margin-bottom: 20px;
+        }
+
+        .total p {
+            color: #0a2351;
+            font-size: 1em;
+            font-weight: bold;
+        }
+
+        .card-deck {
+            margin: 20px 0;
+        }
+
+        .card-img-top {
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            height: 200px;
+            padding: 15px;
+            overflow: hidden;
+        }
+
+        .card-title {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .card-text {
+            font-size: 0.9em;
+            overflow: auto;
+            text-overflow: ellipsis;
+            white-space: normal;
+        }
+
+        .card-button {
+            width: 100%;
+        }
+
+        .custom-card {
+            width: 200px;
+            margin: auto;
+        }
+
+        .cart-container {
+            max-height: 600px;
+            overflow-y: auto;
+        }
+
+        .remove-form {
+            position: absolute;
+            top: 327.5px;
+            right: -3.5px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .remove-icon {
+            background: transparent;
+            border: none;
+            color: #dc3545; 
+            font-size: 1.5rem;
+        }
+
+        .remove-icon:hover {
+            color: #c82333;
+            cursor: pointer;
+        }
+
+        .empty {
+            background-color: #f2f2f2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .empty h1 {
+            text-align: center;
+            color: #0a2351;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .empty p {
+            text-align: center;
+            color: black;
+            font-size: 1em;
+            font-weight: normal;
+        }
+
+        .btn_empty {
+            font-weight: bold;
+            width: 13.5em;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="main">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="@Url.Action("Index", "Home")">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Wishlist</li>
+                </ol>
+            </nav>
+        </div>
+
+        <div class="main">
+            <h1>Your Wishlisted Products</h1>
+        </div>
+
+        @if (Model != null && Model.Any())
+        {
+            <div class="total">
+                <p class="total" data-total="@ViewBag.TotalProducts">Total Products Wishlisted: @ViewBag.TotalProducts</p>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    @foreach (var item in Model)
+                    {
+                        <div class="col-md-3 mb-4">
+                            <div class="card">
+                                <div class="cart-item">
+                                    <form id="removeForm" asp-action="RemoveFromWishlist" method="post" class="d-inline remove-form">
+                                        <input type="hidden" name="id" value="@item.Product.ProductId" />
+                                        <button type="submit" class="btn btn-link remove-icon" aria-label="Remove">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                                <img src="@item.Product.ProductImages.FirstOrDefault().ImageUrl" class="card-img-top" alt="Product Image">                            
+                                <div class="card-body">
+                                    <h5 class="card-title">@item.Product.Name</h5>
+                                    <p class="card-text" style="height: 50px">@item.Product.Description</p>
+                                    <p class="card-text"><strong>Price:</strong> $@item.Product.Price</p>
+                                    <form asp-action="AddToCart" method="post">
+                                        <input type="hidden" name="id" value="@item.ProductId" />
+                                        <input type="number" name="quantity" class="quantity" min="1" value="1" style="padding: 4px 8px; width: 128px;" />
+                                        <button type="submit" class="btn btn-outline-primary" id="addToCartBtn" data-url="@Url.Action("AddToCart", "Products")" style="padding: 4px 8px; width: 8em; margin-bottom: 2px; font-weight: bold;">Add to Cart</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="empty">
+                <img src="~/images/wishlist.png" alt="Empty Wishlist" class="empty-wishlist-image" style="max-width: 200px; margin-top: 25px; margin-bottom: 25px;" />
+                <h1 class="no-items-message">Your wishlist is empty</h1>
+                <p>Looks like you haven't added any products yet.<br />Start adding items to your wishlist now...</p>
+                <button class="btn_empty btn-outline-primary" onclick="window.location.href='@Url.Action("Index", "Products")'">Start Shopping</button>
+            </div>
+        }
+    </div>
+    <div class="modal fade" id="confirmRemoveModal" tabindex="-1" aria-labelledby="confirmRemoveModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style="color: #0a2351; font-weight:bold;">
+                    <h5 class="modal-title" id="confirmRemoveModalLabel">Confirm Removal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="color: #0a2351; font-size: 0.9em; font-weight:bold;">
+                    Are you sure you want to remove this item from your wishlist?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-danger" id="confirmRemoveBtn">Remove</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let currentForm = null;
+
+            function handleRemove() {
+                if (currentForm) {
+                    currentForm.submit();
+                }
+            }
+
+            const confirmRemoveBtn = document.getElementById('confirmRemoveBtn');
+            if (confirmRemoveBtn) {
+                confirmRemoveBtn.addEventListener('click', handleRemove);
+            }
+
+            document.querySelectorAll('.remove-icon').forEach(button => {
+                button.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    currentForm = this.closest('form');
+
+                    const productId = currentForm.querySelector('input[name="id"]').value;
+                    const formAction = `/Products/RemoveFromWishlist?id=${productId}`;
+                    currentForm.setAttribute('action', formAction);
+
+                    const confirmRemoveModal = new bootstrap.Modal(document.getElementById('confirmRemoveModal'));
+                    confirmRemoveModal.show();
+                });
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const addToCartBtns = document.querySelectorAll('#addToCartBtn');
+
+            function showTemporaryTooltip(button, message) {
+                const tooltip = new bootstrap.Tooltip(button, {
+                    trigger: 'manual',
+                    title: message,
+                    placement: 'top'
+                });
+                tooltip.show();
+                setTimeout(() => {
+                    tooltip.hide();
+                }, 2000);
+            }
+
+            addToCartBtns.forEach(button => {
+                button.addEventListener('click', function () {
+                    showTemporaryTooltip(button, 'Product has been added to your cart');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
